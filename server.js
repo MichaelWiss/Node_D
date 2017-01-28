@@ -3,7 +3,14 @@ const express = require('express');
 var app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello express!');
+	// res.send('<h1>Hello express!</h1>');
+	res.send({
+		name: 'Andrew',
+		likes: [
+          'Biking',
+          'Cities'
+		]
+	})
 });
 
 app.listen(3000);
